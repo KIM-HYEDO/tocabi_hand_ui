@@ -9,7 +9,7 @@ or
 $ cd {your_workspace}/tocabi_hand_ui/scripts
 $ python3 tocabi_hand_ui.py
 ```
-<img src="https://github.com/user-attachments/assets/04a3b40b-1a58-4793-8b28-92cb15305e77.jpg" width="30%" height="30%"/>
+<img src="https://github.com/user-attachments/assets/04a3b40b-1a58-4793-8b28-92cb15305e77" width="30%" height="30%"/>
 ![image](https://github.com/user-attachments/assets/04a3b40b-1a58-4793-8b28-92cb15305e77)
 
 
