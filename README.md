@@ -28,6 +28,8 @@ Save your parameters in UI
 Reset your parameters in UI
 
 ## Video
-<img src="https://github.com/user-attachments/assets/16ccd9be-ff50-4e50-b020-69e8bd54a94e" width="40%" height="40%"/>
-
+<video src="https://github.com/user-attachments/assets/16ccd9be-ff50-4e50-b020-69e8bd54a94e" width="40%" height="40%"/>
+<video width="40%" height="40%" controls>
+  <source src="https://github.com/user-attachments/assets/16ccd9be-ff50-4e50-b020-69e8bd54a94e">
+</video>
 
