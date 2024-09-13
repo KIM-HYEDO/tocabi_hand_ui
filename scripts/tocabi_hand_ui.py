@@ -7,10 +7,7 @@ from datetime import datetime
 import rospy
 import time
 import dynamixel_sdk as dxl
-<<<<<<< HEAD
 import copy
-=======
->>>>>>> 9923d9e913c8a5b311cac41448e0525605543951
 
 # msgs
 from std_msgs.msg import Int16MultiArray
@@ -64,7 +61,6 @@ class HandCtrlGUI(QMainWindow, form_class) :
         self.init_timer()
         self.InitThread()
         self.init_ros()
-<<<<<<< HEAD
         self.__init_comm()
         self.init_dxl()
         self.heartbeat()
@@ -85,28 +81,6 @@ class HandCtrlGUI(QMainWindow, form_class) :
         self.Grasp_Target_Cur_FE = copy.deepcopy(config['Grasp_Target_Cur_FE'])
         self.Grasp_Target_Pos_AA = copy.deepcopy(config['Grasp_Target_Pos_AA'])
         self.Grasp_Target_Pos_FE = copy.deepcopy(config['Grasp_Target_Pos_FE'])
-=======
-        # self.__init_comm()
-        # self.init_dxl()
-        # self.heartbeat()
-
-    def load_param(self):
-        self.Init_Pos_AA         = config['Init_Pos_AA']
-        self.Init_Pos_FE         = config['Init_Pos_FE']
-        self.Init_Cur_FE         = config['Init_Cur_FE']
-        self.PositionLimit_FE    = config['PositionLimit_FE']
-        self.PositionMinLimit_FE = config['PositionMinLimit_FE']
-        self.PositionLimit_AA    = config['PositionLimit_AA']
-        self.PositionMinLimit_AA = config['PositionMinLimit_AA']
-        self.CurrentLimit_FE     = config['CurrentLimit_FE']
-        self.CurrentLimit_AA     = config['CurrentLimit_AA']
-        self.Gain_position_FE    = config['Gain_position_FE']
-        self.Gain_position_AA    = config['Gain_position_AA']
-        self.Grasp_Target_Cur_AA = config['Grasp_Target_Cur_AA']
-        self.Grasp_Target_Cur_FE = config['Grasp_Target_Cur_FE']
-        self.Grasp_Target_Pos_AA = config['Grasp_Target_Pos_AA']
-        self.Grasp_Target_Pos_FE = config['Grasp_Target_Pos_FE']
->>>>>>> 9923d9e913c8a5b311cac41448e0525605543951
         self.Grasp_Ctrl_Mode_AA  = 1  #  0:current control,  1:current position control 
         self.Grasp_Ctrl_Mode_FE  = 0
         self.joint_positions     = np.zeros(NUM_JOINT)
@@ -177,10 +151,7 @@ class HandCtrlGUI(QMainWindow, form_class) :
         ####### UI in Setting #######
         ### Set Buttons ###
         self.btn_save.clicked.connect(self.buttonSave)
-<<<<<<< HEAD
         self.btn_reset.clicked.connect(self.buttonReset)
-=======
->>>>>>> 9923d9e913c8a5b311cac41448e0525605543951
 
         ### Set Slidebars ###
         for idx, (slide, label) in enumerate(zip(self.AA_setting_slidebar, self.AA_setting_slideLabel)):
@@ -330,13 +301,10 @@ class HandCtrlGUI(QMainWindow, form_class) :
             yaml.dump(config, file)
         print(f"Data saved to {filename}")
 
-<<<<<<< HEAD
     def buttonReset(self):
         self.load_param()
         self.Init()
 
-=======
->>>>>>> 9923d9e913c8a5b311cac41448e0525605543951
     ### Slider Setting ###
     def sliderValueChanged(self, slide, label):
         label.setText(str(slide.value()))
