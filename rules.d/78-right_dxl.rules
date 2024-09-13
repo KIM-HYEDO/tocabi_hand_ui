@@ -1,0 +1,1 @@
+SUBSYSTEMS=="usb", ATTRS{manufacturer}=="FTDI", ATTRS{serial}=="FT5NVAC3", SYMLINK+="dxl_right dxl_attr{devpath}", MODE="0666"
