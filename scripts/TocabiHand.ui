@@ -29,7 +29,11 @@
     <string notr="true">background-color: lightgray;</string>
    </property>
    <property name="currentIndex">
+<<<<<<< HEAD
     <number>1</number>
+=======
+    <number>0</number>
+>>>>>>> 9923d9e913c8a5b311cac41448e0525605543951
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -1318,7 +1322,11 @@
       <string>Save</string>
      </property>
     </widget>
+<<<<<<< HEAD
     <widget class="QPushButton" name="btn_reset">
+=======
+    <widget class="QPushButton" name="pushButton_6">
+>>>>>>> 9923d9e913c8a5b311cac41448e0525605543951
      <property name="geometry">
       <rect>
        <x>840</x>
@@ -2802,7 +2810,11 @@
     <zorder>columnView_10</zorder>
     <zorder>columnView_9</zorder>
     <zorder>btn_save</zorder>
+<<<<<<< HEAD
     <zorder>btn_reset</zorder>
+=======
+    <zorder>pushButton_6</zorder>
+>>>>>>> 9923d9e913c8a5b311cac41448e0525605543951
     <zorder>label</zorder>
     <zorder>label_2</zorder>
     <zorder>label_3</zorder>
