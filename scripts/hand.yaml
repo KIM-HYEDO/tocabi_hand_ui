@@ -1,0 +1,70 @@
+# Device Name
+DEVICENAME        : "/dev/ttyUSB0"
+
+# Protocol version
+PROTOCOL_VERSION            : 2    
+BAUDRATE                    : 57600
+
+# Operating mode
+CURRENT_CONTROL_MODE    : 0
+POSITION_CONTROL_MODE   : 3
+CURRENT_POSITION_CONTROL_MODE  : 5
+EXTENDED_POSITION_CONTROL_MODE : 4
+
+# Control table address 
+ADDR_XL330_DRIVING_MODE     : 10
+ADDR_XL330_OPERATING_MODE   : 11
+ADDR_XL330_TORQUE_ENABLE    : 64
+
+ADDR_XL330_GOAL_CURRENT     : 102
+ADDR_XL330_GOAL_POSITION    : 116
+
+ADDR_XL330_PRESENT_CURRENT  : 126
+ADDR_XL330_PRESENT_VELOCITY : 128
+ADDR_XL330_PRESENT_POSITION : 132
+
+ADDR_XL330_CURRENT_LIMIT    : 38
+
+ADDR_XL330_D_GAIN_POSITION  : 80
+ADDR_XL330_I_GAIN_POSITION  : 82
+ADDR_XL330_P_GAIN_POSITION  : 84
+
+ADDR_XL330_PROFILE_VELOCITY : 112
+
+# Dynamixel ID
+DXL_ID    : [11,12,21,22,31,32,41,42]
+DXL_ID_FE : [12,22,32,42]
+DXL_ID_AA : [11,21,31,41]
+
+# Data sizes
+LEN_GOAL_POSITION           : 4
+LEN_PRESENT_VELOCITY        : 4
+LEN_PRESENT_POSITION        : 4
+LEN_PRESENT_CURRENT         : 2
+LEN_GOAL_CURRENT            : 2
+LEN_DRIVING_MODE            : 1
+
+# Variables
+NUM_FINGER                  : 4
+NUM_JOINT                   : 8
+TORQUE_ENABLE               : 1
+TORQUE_DISABLE              : 0   
+
+Init_Pos_AA         : [2000, 2000, 2115, 2000]
+Init_Pos_FE         : [0,0,0,0]
+Init_Cur_FE         : [-60,-60,-60,-60]
+PositionLimit_FE    : [4000, 4000, 4000, 4000]
+PositionMinLimit_FE : [0, 0, 0, 0]
+PositionLimit_AA    : [4000, 4000, 4000, 4000]
+PositionMinLimit_AA : [0, 0, 0, 0]
+CurrentLimit_FE     : [100, 100, 100, 100]
+CurrentLimit_AA     : [100, 100, 100, 100]
+Gain_position_FE    : [400, 0, 250]  # D - I - P
+Gain_position_AA    : [500, 0, 300]  # D - I - P
+Grasp_Target_Cur_AA : [80, 80, 80, 80]
+Grasp_Target_Cur_FE : [60, 60, 60, 60]
+Grasp_Target_Pos_AA : [1450, 2000, 2115, 2000]
+Grasp_Target_Pos_FE : [80, 80, 80, 80]
+
+############## e-manual ##############
+# https://emanual.robotis.com/docs/kr/dxl/x/xc330-t181/#%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%84%A4%EB%AA%85

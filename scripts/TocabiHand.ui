@@ -1,0 +1,2903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tocabi Hand UI</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: lightgray;</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>971</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: lightgray;</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Control</string>
+    </attribute>
+    <widget class="QPushButton" name="btn_torqueon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>121</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Torque ON</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_torqueoff">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>121</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Torque OFF</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_init">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>220</y>
+       <width>121</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>INIT</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_grasp">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>320</y>
+       <width>121</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>GRASP</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_stretch">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>420</y>
+       <width>121</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>STRETCH</string>
+     </property>
+    </widget>
+    <widget class="QColumnView" name="columnView">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>150</y>
+       <width>331</width>
+       <height>351</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_AA_grasp_current_position_control">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>450</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CURRENT POSITION CONTROL</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_AA_grasp_current_control">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>400</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CURRENT CONTROL</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QColumnView" name="columnView_2">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>150</y>
+       <width>331</width>
+       <height>351</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_FE_grasp_current_position_control">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>450</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CURRENT POSITION CONTROL</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_FE_grasp_current_control">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>400</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CURRENT CONTROL</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_image">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>10</y>
+       <width>101</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA4_control_slide">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>330</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA1_control_label">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>240</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA3_control_label">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>300</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA4_control_label">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>330</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA1_control_slide">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>240</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA2_control_slide">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>270</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA3_control_slide">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>300</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA2_control_label">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>270</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE1_control_label">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>240</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE4_control_slide">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>330</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE3_control_slide">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>300</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE3_control_label">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>300</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE2_control_slide">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>270</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE4_control_label">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>330</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE2_control_label">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>270</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE1_control_slide">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>240</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_AA1">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>235</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA1</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_AA2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>265</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA2</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_AA3">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>295</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA3</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_AA4">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>325</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA4</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="tristate">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_FE4">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>325</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE4</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_FE1">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>235</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE1</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_FE2">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>265</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE2</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_FE3">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>295</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE3</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_AA_ALL">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>205</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ALL</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_FE_ALL">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>205</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ALL</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_33">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>160</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>AA Joint</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_34">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>160</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>FE Joint</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_AA_grasp_mode">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>360</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Grasp Control Mode : Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_FE_grasp_mode">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>360</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Grasp Control Mode : Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_AA_grasp_value">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>200</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Value : Goal Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_FE_grasp_value">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>200</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Value : Goal Current</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_35">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>40</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>AA Joint</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>40</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>FE Joint</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>465</x>
+       <y>90</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Position</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>465</x>
+       <y>115</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Current</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_AA1_pos">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>90</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_AA2_pos">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>90</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_AA3_pos">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>90</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_AA4_pos">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>90</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_AA4_cur">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>115</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_AA1_cur">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>115</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_AA2_cur">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>115</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_AA3_cur">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>115</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_FE1_pos">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>90</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_FE4_cur">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>115</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_FE2_pos">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>90</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_FE4_pos">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>90</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_FE3_cur">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>115</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_FE3_pos">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>90</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_FE2_cur">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>115</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="label_live_FE1_cur">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>115</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>215</x>
+       <y>70</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_40">
+     <property name="geometry">
+      <rect>
+       <x>275</x>
+       <y>70</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>70</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_42">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>70</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>565</x>
+       <y>70</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_44">
+     <property name="geometry">
+      <rect>
+       <x>625</x>
+       <y>70</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_45">
+     <property name="geometry">
+      <rect>
+       <x>685</x>
+       <y>70</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>745</x>
+       <y>70</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QColumnView" name="columnView_5">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>671</width>
+       <height>121</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_47">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>10</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>LIVE</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_act_off">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>420</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ACT OFF</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_act_on">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>320</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ACT ON</string>
+     </property>
+    </widget>
+    <zorder>columnView_5</zorder>
+    <zorder>btn_torqueon</zorder>
+    <zorder>btn_torqueoff</zorder>
+    <zorder>btn_init</zorder>
+    <zorder>btn_grasp</zorder>
+    <zorder>btn_stretch</zorder>
+    <zorder>columnView</zorder>
+    <zorder>btn_AA_grasp_current_position_control</zorder>
+    <zorder>btn_AA_grasp_current_control</zorder>
+    <zorder>label_image</zorder>
+    <zorder>columnView_2</zorder>
+    <zorder>btn_FE_grasp_current_control</zorder>
+    <zorder>btn_FE_grasp_current_position_control</zorder>
+    <zorder>AA4_control_slide</zorder>
+    <zorder>AA1_control_label</zorder>
+    <zorder>AA3_control_label</zorder>
+    <zorder>AA4_control_label</zorder>
+    <zorder>AA1_control_slide</zorder>
+    <zorder>AA2_control_slide</zorder>
+    <zorder>AA3_control_slide</zorder>
+    <zorder>AA2_control_label</zorder>
+    <zorder>FE1_control_label</zorder>
+    <zorder>FE4_control_slide</zorder>
+    <zorder>FE3_control_slide</zorder>
+    <zorder>FE3_control_label</zorder>
+    <zorder>FE2_control_slide</zorder>
+    <zorder>FE4_control_label</zorder>
+    <zorder>FE2_control_label</zorder>
+    <zorder>FE1_control_slide</zorder>
+    <zorder>checkBox_AA1</zorder>
+    <zorder>checkBox_AA2</zorder>
+    <zorder>checkBox_AA3</zorder>
+    <zorder>checkBox_AA4</zorder>
+    <zorder>checkBox_FE4</zorder>
+    <zorder>checkBox_FE1</zorder>
+    <zorder>checkBox_FE2</zorder>
+    <zorder>checkBox_FE3</zorder>
+    <zorder>checkBox_AA_ALL</zorder>
+    <zorder>checkBox_FE_ALL</zorder>
+    <zorder>label_33</zorder>
+    <zorder>label_34</zorder>
+    <zorder>label_AA_grasp_mode</zorder>
+    <zorder>label_FE_grasp_mode</zorder>
+    <zorder>label_AA_grasp_value</zorder>
+    <zorder>label_FE_grasp_value</zorder>
+    <zorder>label_35</zorder>
+    <zorder>label_36</zorder>
+    <zorder>label_37</zorder>
+    <zorder>label_38</zorder>
+    <zorder>label_live_AA1_pos</zorder>
+    <zorder>label_live_AA2_pos</zorder>
+    <zorder>label_live_AA3_pos</zorder>
+    <zorder>label_live_AA4_pos</zorder>
+    <zorder>label_live_AA4_cur</zorder>
+    <zorder>label_live_AA1_cur</zorder>
+    <zorder>label_live_AA2_cur</zorder>
+    <zorder>label_live_AA3_cur</zorder>
+    <zorder>label_live_FE1_pos</zorder>
+    <zorder>label_live_FE4_cur</zorder>
+    <zorder>label_live_FE2_pos</zorder>
+    <zorder>label_live_FE4_pos</zorder>
+    <zorder>label_live_FE3_cur</zorder>
+    <zorder>label_live_FE3_pos</zorder>
+    <zorder>label_live_FE2_cur</zorder>
+    <zorder>label_live_FE1_cur</zorder>
+    <zorder>label_39</zorder>
+    <zorder>label_40</zorder>
+    <zorder>label_41</zorder>
+    <zorder>label_42</zorder>
+    <zorder>label_43</zorder>
+    <zorder>label_44</zorder>
+    <zorder>label_45</zorder>
+    <zorder>label_46</zorder>
+    <zorder>label_47</zorder>
+    <zorder>btn_act_off</zorder>
+    <zorder>btn_act_on</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Setting</string>
+    </attribute>
+    <widget class="QPushButton" name="btn_save">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>430</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_reset">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>360</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA_P_slide">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>50</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>50</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA P</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA_I_slide">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>80</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>80</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA  I</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA_D_slide">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>110</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>110</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA D</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>230</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA2</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA3_cur_slide">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>260</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>900</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA2_cur_slide">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>230</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>900</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA1_cur_slide">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>200</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>900</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>260</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA3</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA4_cur_slide">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>290</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>900</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>290</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA4</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA_P_label">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>50</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA_D_label">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>110</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA_I_label">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>80</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA1_cur_label">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>200</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA2_cur_label">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>230</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA3_cur_label">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>260</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA4_cur_label">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>290</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE1_cur_label">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>200</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>260</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE3</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE_P_slide">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE4_cur_slide">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>290</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>900</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE_I_slide">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>80</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE4_cur_label">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>290</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>80</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE  I</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE_D_slide">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>110</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>110</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE D</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE2_cur_slide">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>230</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>900</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE_P_label">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>50</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE_I_label">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>80</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>230</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>50</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE P</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>290</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE4</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE3_cur_slide">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>260</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>900</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE_D_label">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>110</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE2_cur_label">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>230</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE1_cur_slide">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>200</y>
+       <width>160</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>900</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE3_cur_label">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>260</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>200</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_image2">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>10</y>
+       <width>101</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QColumnView" name="columnView_9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>641</width>
+       <height>121</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_79">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>120</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>PID gain</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_80">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>160</y>
+       <width>181</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Current Limit</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QColumnView" name="columnView_10">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>641</width>
+       <height>151</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE1_pos_label">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>410</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE1_pos_slide">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>410</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA1_pos_slide">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>410</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE2_pos_slide">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>430</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA3_pos_slide">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>450</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE2_pos_label">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>430</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA2_pos_label">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>430</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE3_pos_slide">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>450</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA1_pos_label">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>410</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE4_pos_label">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>470</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QColumnView" name="columnView_11">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>350</y>
+       <width>801</width>
+       <height>151</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA4_pos_slide">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>470</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_81">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>340</y>
+       <width>181</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Position Limit</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE3_pos_label">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>450</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE4_pos_slide">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>470</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_82">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>430</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_83">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>410</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_84">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>470</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA4</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA3_pos_label">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>450</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_86">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>450</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AA3</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA2_pos_slide">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>430</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA4_pos_label">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>470</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_image3">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>170</y>
+       <width>101</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QColumnView" name="columnView_12">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>160</y>
+       <width>121</width>
+       <height>181</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA1_pos_label_min">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>410</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA3_pos_label_min">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>450</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA3_pos_slide_min">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>450</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA4_pos_slide_min">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>470</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA2_pos_slide_min">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>430</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="AA1_pos_slide_min">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>410</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA2_pos_label_min">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>430</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="AA4_pos_label_min">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>470</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE3_pos_label_min">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>450</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE1_pos_slide_min">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>410</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE2_pos_label_min">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>430</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>450</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_92">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>430</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE2</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE4_pos_slide_min">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>470</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE2_pos_slide_min">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>430</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="FE3_pos_slide_min">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>450</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>8000</number>
+     </property>
+     <property name="singleStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_93">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>470</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE4</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE1_pos_label_min">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>410</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>410</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FE1</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FE4_pos_label_min">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>470</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_94">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>380</y>
+       <width>50</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>[min]</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_95">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>380</y>
+       <width>50</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>[max]</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_96">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>380</y>
+       <width>50</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>[min]</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_97">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>380</y>
+       <width>50</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>[max]</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <zorder>columnView_11</zorder>
+    <zorder>columnView_10</zorder>
+    <zorder>columnView_9</zorder>
+    <zorder>btn_save</zorder>
+    <zorder>btn_reset</zorder>
+    <zorder>label</zorder>
+    <zorder>label_2</zorder>
+    <zorder>label_3</zorder>
+    <zorder>label_4</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_6</zorder>
+    <zorder>label_13</zorder>
+    <zorder>AA_P_label</zorder>
+    <zorder>AA_D_label</zorder>
+    <zorder>AA_I_label</zorder>
+    <zorder>AA1_cur_label</zorder>
+    <zorder>AA2_cur_label</zorder>
+    <zorder>AA3_cur_label</zorder>
+    <zorder>AA4_cur_label</zorder>
+    <zorder>FE1_cur_label</zorder>
+    <zorder>label_7</zorder>
+    <zorder>FE4_cur_label</zorder>
+    <zorder>label_8</zorder>
+    <zorder>label_9</zorder>
+    <zorder>FE_P_label</zorder>
+    <zorder>FE_I_label</zorder>
+    <zorder>label_10</zorder>
+    <zorder>label_11</zorder>
+    <zorder>label_16</zorder>
+    <zorder>FE_D_label</zorder>
+    <zorder>FE2_cur_label</zorder>
+    <zorder>FE3_cur_label</zorder>
+    <zorder>label_12</zorder>
+    <zorder>label_image2</zorder>
+    <zorder>AA_I_slide</zorder>
+    <zorder>AA4_cur_slide</zorder>
+    <zorder>AA_P_slide</zorder>
+    <zorder>AA1_cur_slide</zorder>
+    <zorder>AA_D_slide</zorder>
+    <zorder>FE4_cur_slide</zorder>
+    <zorder>FE_P_slide</zorder>
+    <zorder>FE_I_slide</zorder>
+    <zorder>AA2_cur_slide</zorder>
+    <zorder>FE2_cur_slide</zorder>
+    <zorder>AA3_cur_slide</zorder>
+    <zorder>FE_D_slide</zorder>
+    <zorder>FE3_cur_slide</zorder>
+    <zorder>FE1_cur_slide</zorder>
+    <zorder>label_79</zorder>
+    <zorder>label_80</zorder>
+    <zorder>FE1_pos_label</zorder>
+    <zorder>FE2_pos_label</zorder>
+    <zorder>AA2_pos_label</zorder>
+    <zorder>AA1_pos_label</zorder>
+    <zorder>FE4_pos_label</zorder>
+    <zorder>label_81</zorder>
+    <zorder>FE3_pos_label</zorder>
+    <zorder>label_82</zorder>
+    <zorder>label_83</zorder>
+    <zorder>label_84</zorder>
+    <zorder>AA3_pos_label</zorder>
+    <zorder>label_86</zorder>
+    <zorder>AA4_pos_label</zorder>
+    <zorder>FE4_pos_slide</zorder>
+    <zorder>FE3_pos_slide</zorder>
+    <zorder>AA3_pos_slide</zorder>
+    <zorder>FE2_pos_slide</zorder>
+    <zorder>FE1_pos_slide</zorder>
+    <zorder>AA4_pos_slide</zorder>
+    <zorder>AA1_pos_slide</zorder>
+    <zorder>AA2_pos_slide</zorder>
+    <zorder>columnView_12</zorder>
+    <zorder>label_image3</zorder>
+    <zorder>AA1_pos_label_min</zorder>
+    <zorder>AA3_pos_label_min</zorder>
+    <zorder>AA3_pos_slide_min</zorder>
+    <zorder>AA4_pos_slide_min</zorder>
+    <zorder>AA2_pos_slide_min</zorder>
+    <zorder>AA1_pos_slide_min</zorder>
+    <zorder>AA2_pos_label_min</zorder>
+    <zorder>AA4_pos_label_min</zorder>
+    <zorder>FE3_pos_label_min</zorder>
+    <zorder>FE1_pos_slide_min</zorder>
+    <zorder>FE2_pos_label_min</zorder>
+    <zorder>label_17</zorder>
+    <zorder>label_92</zorder>
+    <zorder>FE4_pos_slide_min</zorder>
+    <zorder>FE2_pos_slide_min</zorder>
+    <zorder>FE3_pos_slide_min</zorder>
+    <zorder>label_93</zorder>
+    <zorder>FE1_pos_label_min</zorder>
+    <zorder>label_18</zorder>
+    <zorder>FE4_pos_label_min</zorder>
+    <zorder>label_94</zorder>
+    <zorder>label_95</zorder>
+    <zorder>label_96</zorder>
+    <zorder>label_97</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
